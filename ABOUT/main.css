@@ -1,0 +1,662 @@
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff') format('woff'), /* Modern Browsers */
+       url('IranNastaliq.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    
+
+}
+::selection {
+background:rgba(28,58,107, 0.2);
+color:rgba(184,154,48, .9);
+    
+}
+*,
+*:before,
+*:after {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    
+}
+
+a{
+        cursor:cell;
+
+}
+
+
+@keyframes flipper {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+@-moz-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -moz-transform: translateX(0px); }
+	25% { opacity: 1; -moz-transform: translateX(0px); }
+
+}
+@-webkit-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
+    10% { opacity: 1; -webkit-transform: translateX(0px); }
+	25% { opacity: 1; -webkit-transform: translateX(0px); }
+
+}
+@-ms-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -ms-transform: translateX(0px); }
+	25% { opacity: 1; -ms-transform: translateX(0px); }
+
+}
+
+
+
+/*---------------------------- 
+
+NAVIGATION BAR
+
+-----------------------------*/
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+    font-family: 'El Messiri', sans-serif;
+    opacity:.9;
+    width: 100%;
+    top: 0;
+
+}
+
+.navbar a {
+
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'El Messiri', sans-serif;
+    cursor: cell;
+}
+
+.dropdown:hover .dropbtn {
+    transition: 1s;
+    background: url(nav1.jpg);
+    opacity: .9;
+    background-color: rgba(0,0,0, 0.5);
+    color: black;
+    box-shadow: 5px 5px 50px rgb(0,0,0);
+    position:relative;
+    z-index: 200;
+    font-size: 1.1em;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    transition: 1s;
+    background: url(nav1.jpg);
+    opacity: .9;
+    background-color: rgba(0,0,0, 0.5);
+    color: black;
+    box-shadow: 5px 5px 50px rgb(0,0,0);
+    position:relative;
+    z-index: 200;
+    font-size: 1.1em;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.show {
+    display: block;
+}
+
+.nonactive {
+	float: right;
+    color: black;
+}
+
+.active1 {
+    width: 24%;
+    float: left;
+    background: url(nav.jpg);
+    opacity: .6;
+    background-color: rgba(0,0,0, 0.9);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 900;
+}
+.active1:hover{
+    opacity: .9;
+    transition-duration: .5s;
+}
+.nonactive:hover {
+    transition: 1s;
+    background: url(nav1.jpg);
+    opacity: .9;
+    background-color: rgba(0,0,0, 0.5);
+    color: black;
+
+    box-shadow: 5px 5px 50px rgb(0,0,0);
+    position:relative;
+    z-index: 200;
+    font-size: 1.1em;
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+
+
+
+/*---------------------------- 
+
+FIRST PART 
+
+-----------------------------*/
+.mainfirst {
+	width: 100%;
+    height: auto;
+
+}
+
+.mainHeader {
+    font-family: 'MyWebFont',  'El Messiri' , serif;
+    font-size: 3em;
+    text-align: center;
+    background: url(14144.jpg) repeat 50%;
+    background-size: 60%; 
+    color: darkgoldenrod;
+    text-shadow: -1px 1px 10px rgba(0,0,0, .9);
+}
+.eng {
+font-family: 'El Messiri', sans-serif;
+}
+
+.firstNote {
+	width: 100%;
+    height: auto;
+    background: black;
+        display: table;
+        direction: rtl;
+}
+
+.firstNote p {
+    margin-top: 0;
+    padding: 10px;
+	display: inline-block;
+    background: url(3.jpg) repeat 3.2%;
+    border: 10px solid rgba(0,0,0,.5);
+    color: darkgoldenrod;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+.engi {
+    margin-left: 0;
+	float: left;
+    width: 50%;
+    font-family: "Montserrat", serif;
+    direction: ltr;
+    font-size: 2em;
+    font-size-adjust: auto;
+    -moz-box-shadow:    inset 0 0 40px black;
+    -webkit-box-shadow: inset 0 0 40px black;
+    box-shadow:         inset 0 0 90px black;
+        display: table-cell;
+        font-weight: bolder;
+}
+.fars {
+    margin-right: 0;
+	float: right;
+    width: 50%;
+    font-family: 'MyWebFont',  'El Messiri' , serif;
+    line-height: 2em;
+    font-size: 2.25em;
+    font-size-adjust: auto;
+    -moz-box-shadow:    inset 0 0 40px black;
+    -webkit-box-shadow: inset 0 0 40px black;
+    box-shadow:         inset 0 0 90px black;
+        display: table-cell;
+}
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+.parallax-window p {
+    font-family: "El Messiri", serif;
+    font-size: 4em;
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 50px;
+    width: 40%;
+    color:  rgba(250,250,250,1);
+    text-shadow:-1px 1px 10px rgba(0,0,0, .9); 
+}
+
+.wrapper {
+      margin: 0;
+      width: 100%;
+      padding: 20px 0;
+      height: auto;
+      border: 2px solid #CCC;
+      display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3,200px);
+    justify-content: center;
+    align-content: end;
+    background: url(14144.jpg) repeat ;
+}
+
+.box {
+    background-color: rgba(250,250,250,.5);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.item1 {
+    grid-column: 1 / 5;
+    font-family: 'MyWebFont',  'El Messiri' , serif;
+    font-size: 2em; 
+    line-height: 2em;
+    padding-top: 5%;
+    padding-right: 17px;
+    text-align: right;
+}
+
+.item2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    font-family: "Montserrat", serif;
+    font-size: 1.75em; 
+    font-weight: bolder;
+}
+
+.item3 {
+    grid-column: 3 / 5;
+    font-family: 'MyWebFont',  'El Messiri' , serif;
+    font-size: 2em; 
+    line-height: 2em;
+    padding-top: 22px;
+    text-align: right;
+}
+.item4 {
+    font-family: 'Montserrat' , serif;
+    font-size: 1.3em;   
+    font-weight: bolder;
+}
+
+
+
+
+/*---------------------------- 
+
+PICS
+
+-----------------------------*/
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+    border: 15px solid black;
+    height: auto;
+    background: grey;
+    background-size: 100%;
+    -moz-box-shadow:    inset 0 0 250px rgba(0,0,0,.8);
+    -webkit-box-shadow: inset 0 0 250px rgba(0,0,0,.8);
+    box-shadow:         inset 0 0 250px rgba(0,0,0,.8):
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+}
+
+.column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border: 10px solid rgba(0,0,0,.9);
+    width: 100%;
+    -moz-box-shadow:    inset 0 0 40px white;
+    -webkit-box-shadow: inset 0 0 40px white;
+    box-shadow:         inset 0 0 90px white;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column1 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column1 {
+    flex: 100%;
+    max-width: 100%;
+      
+  }
+
+}
+#buttonShow{
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    border: 2px solid black;
+    background-color:rgba(0,0,0,.5);
+	color:white;
+	font-size: 2em;
+	text-decoration:none;
+    text-shadow: 5px 5px 100px black;
+}
+#buttonShow:hover {
+    transition: .7s;
+    -moz-box-shadow:50px 20px 200px black;
+	-webkit-box-shadow:50px 20px 200px black;
+    box-shadow: 50px 20px 200px black;
+    color: black;
+    text-shadow: 5px 5px 10px rgb(0,0,0);
+    font-size: 3em;
+}
+
+.row1 h4{
+
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10em;
+	display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/*----------------------------- 
+
+THE MEDIA QUERIES BREAK POINTS 
+
+-----------------------------*/
+@media screen and (max-width: 1239px) {
+    .fars {
+        font-size: 2.45em;
+
+    }
+}
+@media screen and (max-width: 1231px) {
+    .fars {
+        font-size: 2.44em;
+
+    }
+}
+
+@media screen and (max-width: 1227px) {
+    .engi {
+        font-size: 2.15em;
+    }
+}
+
+
+
+@media screen and (max-width: 1125px) {
+    .engi {
+        
+    font-size: 2.13em;
+    }
+    .fars {
+        font-size: 2.45em;
+
+    }
+}
+
+@media screen and (max-width: 1117px) {
+    .engi {
+        
+    font-size: 2.125em;
+    }
+}
+@media screen and (max-width: 1113px) {
+    .engi {
+        
+    font-size: 2.122em;
+    }
+}
+@media screen and (max-width: 1111px) {
+    .engi {
+        
+    font-size: 2.11em;
+    }
+    .fars {
+        font-size: 2.42em;
+
+    }
+}
+@media screen and (max-width: 1107px) {
+    .engi {
+        
+    font-size: 2.09em;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .engi {
+        float: center;
+        margin:0;
+        width: 100%;
+        
+        line-height: 1.5em;
+        -moz-box-shadow:    inset 0 0 40px black, 13px 13px 55px 4px darkgoldenrod;
+        -webkit-box-shadow: inset 0 0 40px black, 13px 13px 55px 4px darkgoldenrod;
+        box-shadow:         inset 0 0 90px black, 13px 13px 55px 4px darkgoldenrod;
+        
+    }
+    .fars {
+        margin: 0;
+        float: center;
+        width: 100%;
+        line-height: 2em;
+        font-size: 3em;
+        -moz-box-shadow:    inset 0 0 40px black, -13px 13px 55px 4px darkgoldenrod;
+        -webkit-box-shadow: inset 0 0 40px black, -13px 13px 55px 4px darkgoldenrod;
+        box-shadow:         inset 0 0 90px black, -13px 13px 55px 4px darkgoldenrod;
+    }
+    .parallax-window p {
+        font-size: 3em;
+    }
+    .fullscreen-bg__video1 {
+        display: block;
+        width: 100%;
+    }
+    .timelinePara {
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .row1 h4{
+    font-size: 8em;
+    }
+    .certi {
+	font-size: 3em;
+    }
+    .mySlides {
+    margin: 0 25% ;
+    width: 50%;
+    }
+    .column img {
+	height:120px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {  
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3,120px);
+    }
+    .item1 {
+    font-size: 1.15em;
+        padding-top: 5%;
+    }
+
+    .item2 {
+        font-size: 2vw; 
+    }
+
+    .item3 {
+        font-size: 2vw; 
+        line-height: 2em;
+        padding-top: 20px;
+    }
+    .item4 {
+        font-size: 1.4vw;   
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .engi {
+        float: center;
+        margin: 0;
+        width: 100%;
+        
+        font-size: 1.7em;
+        line-height: 1.5em;
+        
+    }
+    .fars {
+        margin: 0;
+        float: center;
+        width: 100%;
+        line-height: 2em;
+        
+        font-size: 2em;
+    }
+    
+    .navbar a {
+    font-size: .75em;
+    }
+    .navbar a:hover {
+    font-size: .8em;
+    }
+    .dropdown .dropbtn {
+    font-size: .75em;
+    }
+    .dropdown:hover .dropbtn {
+    font-size: .8em;
+    }
+    #buttonShow {
+        font-size: 1em;
+    }
+    #buttonShow:hover {
+        font-size: 1.25em;
+    }
+    .row1 h4{
+    font-size: 4em;
+    }
+ 
+    .column img {
+	height:100px;
+    }
+    
+
+}
+@media screen and (max-width: 600px) {
+
+    .item1 {
+    font-size: 1em;
+    padding-top: 5%;
+    }
+
+    .item2 {
+        font-size: 1em; 
+    }
+
+    .item3 {
+        font-size: 1em;
+        padding-top: 20px;
+    }
+    .item4 {
+        font-size: .7em;   
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {  
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(3,100px);
+    }
+    .item1 {
+    font-size: 3.78vw;
+    padding-top: 5%;
+    }
+
+    .item2 {
+        font-size: 3.2vw; 
+    }
+
+    .item3 {
+        font-size: 3.3vw; 
+        line-height: 2em;
+        padding-top: 20px;
+    }
+    .item4 {
+        font-size: 2.1vw;   
+    }
+}
+
+
+
+
